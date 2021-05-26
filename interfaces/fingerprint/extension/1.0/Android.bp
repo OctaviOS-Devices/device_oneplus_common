@@ -3,7 +3,6 @@
 hidl_interface {
     name: "vendor.oneplus.fingerprint.extension@1.0",
     root: "vendor.oneplus",
-    system_ext_specific: true,
     srcs: [
         "types.hal",
         "IVendorFingerprintExtensions.hal",
@@ -11,6 +10,9 @@ hidl_interface {
     ],
     interfaces: [
         "android.hidl.base@1.0",
+    ],   
+    types: [
+        "FpTest",
     ],
     gen_java: true,
 }
